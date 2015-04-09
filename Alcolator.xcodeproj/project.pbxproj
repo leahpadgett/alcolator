@@ -14,6 +14,7 @@
 		224E7D151AD32F78006C2996 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224E7D131AD32F78006C2996 /* LaunchScreen.xib */; };
 		224E7D211AD32F78006C2996 /* AlcolatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 224E7D201AD32F78006C2996 /* AlcolatorTests.m */; };
 		227CDE241AD5FADE00349379 /* WhiskeyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 227CDE231AD5FADE00349379 /* WhiskeyViewController.m */; };
+		227CDE271AD7423300349379 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 227CDE261AD7423300349379 /* MainMenuViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,8 @@
 		224E7D201AD32F78006C2996 /* AlcolatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlcolatorTests.m; sourceTree = "<group>"; };
 		227CDE221AD5FADE00349379 /* WhiskeyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WhiskeyViewController.h; path = Alcolator/WhiskeyViewController.h; sourceTree = "<group>"; };
 		227CDE231AD5FADE00349379 /* WhiskeyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WhiskeyViewController.m; path = Alcolator/WhiskeyViewController.m; sourceTree = "<group>"; };
+		227CDE251AD7423300349379 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
+		227CDE261AD7423300349379 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +67,8 @@
 		224E7CF81AD32F77006C2996 = {
 			isa = PBXGroup;
 			children = (
+				227CDE251AD7423300349379 /* MainMenuViewController.h */,
+				227CDE261AD7423300349379 /* MainMenuViewController.m */,
 				227CDE221AD5FADE00349379 /* WhiskeyViewController.h */,
 				227CDE231AD5FADE00349379 /* WhiskeyViewController.m */,
 				224E7D031AD32F77006C2996 /* Alcolator */,
@@ -225,6 +230,7 @@
 				227CDE241AD5FADE00349379 /* WhiskeyViewController.m in Sources */,
 				224E7D0A1AD32F78006C2996 /* AppDelegate.m in Sources */,
 				224E7D071AD32F78006C2996 /* main.m in Sources */,
+				227CDE271AD7423300349379 /* MainMenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
