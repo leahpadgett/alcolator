@@ -10,10 +10,10 @@
 		224E7D071AD32F78006C2996 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 224E7D061AD32F78006C2996 /* main.m */; };
 		224E7D0A1AD32F78006C2996 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 224E7D091AD32F78006C2996 /* AppDelegate.m */; };
 		224E7D0D1AD32F78006C2996 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224E7D0C1AD32F78006C2996 /* ViewController.m */; };
-		224E7D101AD32F78006C2996 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 224E7D0E1AD32F78006C2996 /* Main.storyboard */; };
 		224E7D121AD32F78006C2996 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 224E7D111AD32F78006C2996 /* Images.xcassets */; };
 		224E7D151AD32F78006C2996 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224E7D131AD32F78006C2996 /* LaunchScreen.xib */; };
 		224E7D211AD32F78006C2996 /* AlcolatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 224E7D201AD32F78006C2996 /* AlcolatorTests.m */; };
+		227CDE241AD5FADE00349379 /* WhiskeyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 227CDE231AD5FADE00349379 /* WhiskeyViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +34,13 @@
 		224E7D091AD32F78006C2996 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		224E7D0B1AD32F78006C2996 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		224E7D0C1AD32F78006C2996 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		224E7D0F1AD32F78006C2996 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		224E7D111AD32F78006C2996 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		224E7D141AD32F78006C2996 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		224E7D1A1AD32F78006C2996 /* AlcolatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlcolatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		224E7D1F1AD32F78006C2996 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		224E7D201AD32F78006C2996 /* AlcolatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlcolatorTests.m; sourceTree = "<group>"; };
+		227CDE221AD5FADE00349379 /* WhiskeyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WhiskeyViewController.h; path = Alcolator/WhiskeyViewController.h; sourceTree = "<group>"; };
+		227CDE231AD5FADE00349379 /* WhiskeyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WhiskeyViewController.m; path = Alcolator/WhiskeyViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +64,8 @@
 		224E7CF81AD32F77006C2996 = {
 			isa = PBXGroup;
 			children = (
+				227CDE221AD5FADE00349379 /* WhiskeyViewController.h */,
+				227CDE231AD5FADE00349379 /* WhiskeyViewController.m */,
 				224E7D031AD32F77006C2996 /* Alcolator */,
 				224E7D1D1AD32F78006C2996 /* AlcolatorTests */,
 				224E7D021AD32F77006C2996 /* Products */,
@@ -85,7 +88,6 @@
 				224E7D091AD32F78006C2996 /* AppDelegate.m */,
 				224E7D0B1AD32F78006C2996 /* ViewController.h */,
 				224E7D0C1AD32F78006C2996 /* ViewController.m */,
-				224E7D0E1AD32F78006C2996 /* Main.storyboard */,
 				224E7D111AD32F78006C2996 /* Images.xcassets */,
 				224E7D131AD32F78006C2996 /* LaunchScreen.xib */,
 				224E7D041AD32F77006C2996 /* Supporting Files */,
@@ -163,6 +165,7 @@
 		224E7CF91AD32F77006C2996 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = BLC;
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "Leah Padgett";
 				TargetAttributes = {
@@ -199,7 +202,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				224E7D101AD32F78006C2996 /* Main.storyboard in Resources */,
 				224E7D151AD32F78006C2996 /* LaunchScreen.xib in Resources */,
 				224E7D121AD32F78006C2996 /* Images.xcassets in Resources */,
 			);
@@ -220,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				224E7D0D1AD32F78006C2996 /* ViewController.m in Sources */,
+				227CDE241AD5FADE00349379 /* WhiskeyViewController.m in Sources */,
 				224E7D0A1AD32F78006C2996 /* AppDelegate.m in Sources */,
 				224E7D071AD32F78006C2996 /* main.m in Sources */,
 			);
@@ -244,14 +247,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		224E7D0E1AD32F78006C2996 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				224E7D0F1AD32F78006C2996 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		224E7D131AD32F78006C2996 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -346,6 +341,7 @@
 				INFOPLIST_FILE = Alcolator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -356,6 +352,7 @@
 				INFOPLIST_FILE = Alcolator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -412,6 +409,7 @@
 				224E7D261AD32F78006C2996 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		224E7D271AD32F78006C2996 /* Build configuration list for PBXNativeTarget "AlcolatorTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +418,7 @@
 				224E7D291AD32F78006C2996 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
