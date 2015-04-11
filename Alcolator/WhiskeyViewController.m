@@ -51,4 +51,9 @@
     self.resultLabel.text = resultText;
 }
 
+- (void) viewDidLoad {
+    [super viewDidLoad];
+    self.title = NSLocalizedString(@"Whiskey", @"whiskey");
+}
+
 @end

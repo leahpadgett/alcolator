@@ -52,6 +52,9 @@
     // Calls the superclass's implementation
     [super viewDidLoad];
     
+    // Set the title of the Navigation Bar
+    self.title = NSLocalizedString(@"Wine", @"wine");
+    
     // Set our primary view's background color to lightGrayColor
     self.view.backgroundColor = [UIColor purpleColor];
     
@@ -66,6 +69,7 @@
     
     // Change font
     self.beerPercentTextField.font = [UIFont fontWithName:@"Avenir Light" size:16];
+   
     
     // Tells `self.beerCountSlider` that when its value changes, it should call `[self -sliderValueDidChange:]`.
     // This is equivalent to connecting the IBAction in our previous checkpoint
@@ -86,6 +90,13 @@
     
     // Gets rid of the maximum number of lines on the label
     self.resultLabel.numberOfLines = 0;
+    
+    // Remove text field from under Navigation Bar
+    if ([self respondsToSelector:@selector(edgesForExtendedLayout)])
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+    
+   
+    
 
 }
 
@@ -130,6 +141,8 @@
 - (void)sliderValueDidChange:(UISlider *)sender {
     NSLog(@"Slider value changed to %f", sender.value);
     [self.beerPercentTextField resignFirstResponder];
+    self.beerPercentTextField.text = [NSString stringWithFormat:@"%d Glasses",(int)sender.value];
+ 
 }
 
 - (void)buttonPressed:(UIButton *)sender {
